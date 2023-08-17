@@ -13,7 +13,7 @@ print(data.isnull().sum())
 sns.pairplot(data)
 
 #Linear reggresion
-def calculateLinearReggression(){
+def calculateLinearReggression():
     model = LinearRegression()
     y = data['Price 2023']
     x = data.drop(['Product','Price 2023','Currency','Country'],axis=1)
@@ -26,6 +26,6 @@ def calculateLinearReggression(){
     print(y_pred)
     print('Accuracy of linear regression classifier on test set: {:.3f}'.format(r2_score(Y_test, y_pred)))
     # A value of 1 indicates that predictions are identical to the observed values;
-}
+
 
 
